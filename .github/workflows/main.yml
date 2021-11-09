@@ -1,6 +1,7 @@
 name: Fly Deploy
 on: 
-  push:
+  watch:
+    types: started
   schedule:
     - cron: '0 4 1 * *'
 env:
